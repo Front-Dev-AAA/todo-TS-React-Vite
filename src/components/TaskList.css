@@ -1,0 +1,70 @@
+.list__btn {
+  opacity: 0.9;
+  background-color: greenyellow;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: transform .5s, outline-color .5s;
+  padding: 15px;
+  margin: 10px;
+  width: 100%;
+  border: 1px solid teal;
+}
+
+.list__btn:focus-visible {
+  outline-color: rgb(0, 94, 255);
+}
+
+.list__btn:hover {
+  transform: scale(1.02);
+}
+
+.list__btn:active {
+  transform: scale(0.97);
+}
+
+
+.myInp {
+  padding: 15px 30px;
+  margin: 10px;
+  border: 1px solid greenyellow;
+  width: 100%;
+  border-radius: 10px;
+  line-height: 1.5rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: crimson;
+}
+
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}

@@ -1,0 +1,61 @@
+.one-task {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 1rem;
+  width: 100%;
+  /* justify-items: center; */
+  justify-self: center;
+  align-items: center;
+}
+.one-task-flex {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.task__btn {
+  opacity: 0.9;
+  background-color: rgb(222, 54, 124);
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: transform .5s, outline-color .5s;
+  padding: 15px;
+  margin: 10px;
+  width: 100%;
+  border: 1px solid teal;
+}
+
+.task__btn:focus-visible {
+  outline-color: rgb(0, 94, 255);
+}
+
+.task__btn:hover {
+  transform: scale(1.02);
+}
+
+.task__btn:active {
+  transform: scale(0.97);
+}
+
+.decr {
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+}
+
+
+
+.task__inp {
+  min-width: 30px;
+  margin-right: 40px;
+}
